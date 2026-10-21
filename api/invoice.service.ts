@@ -1,3 +1,18 @@
+type invoicestatus = 'paid' | 'pending';
+
+interface Invoice {
+    id: number;
+    amount: number;
+    status: invoicestatus;
+    issueDate: string;
+    dueDate: string;
+    customer: {
+        id: number;
+        name: string;
+        email: string;
+    }
+}
+
 const invoices = [{
     id: 1,
     amount: 125039,
@@ -37,3 +52,4 @@ export function findAllInvoices() {
 export function findInvoiceById(id: number) {
     return invoices.find(element => element.id === id);;
 } 
+

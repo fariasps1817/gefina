@@ -1,6 +1,6 @@
 import express from 'express';
 
-import InvoiceRouter from './invoice.route.ts';
+import InvoiceRouter from './api/invoice.route.ts';
 
 const app = express();
 

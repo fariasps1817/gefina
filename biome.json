@@ -1,6 +1,6 @@
 {
-    "$schema": "./node_modules/@biomejs/biome/config.schema.json",
-    "format": {
+    "$schema": "./node_modules/@biomejs/biome/configuration.schema.json",
+    "formatter": {
         "indentStyle": "space",
         "indentSize": 4
     },
